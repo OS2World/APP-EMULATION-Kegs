@@ -1,0 +1,38 @@
+KEGS 0.60 for XFree86/OS2
+-------------------------
+
+For general information about KEGS read the file README.kegs!
+
+This version of KEGS needs emx 0.9d fix3 and XFree86/OS2 to run. You can
+download the emx runtime package from Hobbes or LEO. Look for emxrt.zip.
+XFree86/OS2 can be obtained via Holger Veit's homepage at
+http://borneo.gmd.de/~veit/os2.
+
+For running KEGS you need an Apple IIgs ROM file that has to be called
+'ROM' in the same directory as KEGS. Of course you need to edit the file
+'kegs_conf' to reflect your choice of diskimages to attach. Then the X-Server
+has to be started in 8bit mode (like with 'startx -- -bpp 8'). Note that
+KEGS will change the color palette as soon as it gets focus so the rest of
+the screen will go 'Technicolor' as Ken says. :-) Don't panic! When another
+window gets the focus the colors revert to normal again.
+
+Please note that the OS/2 version has NO support for sound and joystick. If
+you know how to enable sound, e.g. by using the freely available devaudio
+package that's available on Hobbes and LEO, PLEASE PLEASE PLEASE do it and
+submit the changes to Ken!
+
+The normal KEGS distribution that can be downloaded from the author's site
+contains only executables for HP-UX. However, the source already contains
+the changes that are necessary to compile KEGS on OS/2. These changes were
+submitted by Gilles Tschopp, who deserves all thanks etc. I only copied a file,
+changed a line and typed 'make'.
+The included executables for OS/2 were compiled using emx 0.9d fix3. If you
+want to rebuild KEGS, read the file README.compile that contains an OS/2
+section. The file src/vars already is the correct one. You only need to
+edit it.
+
+---------------------------------------------
+Christian Hennecke
+e-mail: christian.hennecke@ruhr-uni-bochum.de
+October, 4th 2000
+
